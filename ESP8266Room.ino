@@ -487,7 +487,7 @@ void webSocketEvent(uint8_t num, WStype_t type, uint8_t * payload, size_t length
             
             break;
         case WStype_BIN:
-            //game-on doesn't use binary payloads, but let's log any we find.
+            //game on doesn't use binary payloads, but let's log any we find.
             USE_SERIAL.printf("[%u] get binary length: %u\n", num, length);
             hexdump(payload, length);
             break;
